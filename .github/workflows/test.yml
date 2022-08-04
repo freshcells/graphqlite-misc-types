@@ -22,5 +22,5 @@ jobs:
               run: |
                   composer require --no-update --dev 
                   composer update --prefer-dist --no-interaction --no-ansi --no-progress
-                  composer stan
+                  composer phpstan
                   composer phpunit
