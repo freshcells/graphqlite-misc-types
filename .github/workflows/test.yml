@@ -23,4 +23,4 @@ jobs:
                   composer require --no-update --dev 
                   composer update --prefer-dist --no-interaction --no-ansi --no-progress
                   composer phpstan
-                  composer phpunit
+                  composer test
