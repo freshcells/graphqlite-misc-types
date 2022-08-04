@@ -1,0 +1,26 @@
+name: graphqlite-misc-types
+
+on:
+    pull_request: ~
+    push:
+        branches:
+            - main
+
+jobs:
+    tests:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                php-versions: [ '7.4', '8.1' ]
+        name: PHP ${{ matrix.php-versions }}
+        steps:
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@v2
+              with:
+                  php-version: ${{ matrix.php-versions }}
+            - name: PHPUnit
+              run: |
+                  composer require --no-update --dev 
+                  composer update --prefer-dist --no-interaction --no-ansi --no-progress
+                  composer stan
+                  composer phpunit
