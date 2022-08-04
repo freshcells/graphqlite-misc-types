@@ -2,7 +2,6 @@
 
 namespace TheCodingMachine\GraphQLite\Types;
 
-
 use GraphQL\Error\Debug;
 use GraphQL\GraphQL;
 use PHPUnit\Framework\TestCase;

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace TheCodingMachine\GraphQLite\Types\Fixtures;
-
 
 use TheCodingMachine\GraphQLite\Annotations\Query;
 

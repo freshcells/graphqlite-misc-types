@@ -10,7 +10,9 @@
 This package is an add-on to the [GraphQLite](http://graphqlite.thecodingmachine.io/) PHP library.
 It contains a set of GraphQL scalar types that can be added to GraphQLite.
 
-This is a fork of https://github.com/thecodingmachine/graphqlite-misc-types which seems to be abandoned.
+This is a takeover drop-in fork of https://github.com/thecodingmachine/graphqlite-misc-types which seems to be abandoned.  
+We left the namespace as `TheCodingMachine` to assure drop-in replacement.
+
 
 ## Install
 

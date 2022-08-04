@@ -2,7 +2,6 @@
 
 namespace TheCodingMachine\GraphQLite\Types\AnyScalar;
 
-
 use TheCodingMachine\GraphQLite\Mappers\Root\RootTypeMapperFactoryContext;
 use TheCodingMachine\GraphQLite\Mappers\Root\RootTypeMapperFactoryInterface;
 use TheCodingMachine\GraphQLite\Mappers\Root\RootTypeMapperInterface;
