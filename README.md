@@ -64,7 +64,7 @@ If you are using the Symfony bundle to initialize GraphQLite, register the `JSON
 
 ```yaml
 # config/services.yaml
-TheCodingMachine\GraphQLite\Types\JSONScalar\JSONScalarTypeMapperFactory:
-tags:
-  - { name: "graphql.root_type_mapper_factory" }
+services:
+    TheCodingMachine\GraphQLite\Types\JSONScalar\JSONScalarTypeMapperFactory:
+        tags: ['graphql.root_type_mapper_factory']
 ```
