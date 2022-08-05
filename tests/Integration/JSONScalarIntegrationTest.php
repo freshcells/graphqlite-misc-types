@@ -2,7 +2,7 @@
 
 namespace TheCodingMachine\GraphQLite\Types;
 
-use GraphQL\Error\Debug;
+use GraphQL\Error\DebugFlag;
 use GraphQL\GraphQL;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Cache\Simple\ArrayCache;
@@ -51,6 +51,6 @@ class JSONScalarIntegrationTest extends TestCase
 
         $this->assertSame([
             'echoJSON' => ['foo' => 'bar']
-        ], $result->toArray(Debug::RETHROW_INTERNAL_EXCEPTIONS)['data']);
+        ], $result->toArray(DebugFlag::RETHROW_INTERNAL_EXCEPTIONS)['data']);
     }
 }

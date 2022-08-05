@@ -22,13 +22,13 @@
   ],
   "require" : {
     "php" : ">=7.4",
-    "thecodingmachine/graphqlite" : "^4",
-    "webonyx/graphql-php": "^0.13.1"
+    "thecodingmachine/graphqlite" : "^5 || ^6",
+    "webonyx/graphql-php": "^14.9"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.0.0",
     "phpstan/phpstan": "^1.8.2",
-    "symfony/cache": "^4.2.7",
+    "symfony/cache": "^4",
     "php-coveralls/php-coveralls": "^2.1"
   },
   "scripts": {
@@ -47,8 +47,11 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "1.0.x-dev"
+      "dev-master": "2.0.x-dev"
     }
+  },
+  "suggest": {
+    "ext-json": "Needed for JSON type"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
